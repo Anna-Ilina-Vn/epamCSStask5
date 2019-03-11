@@ -1,0 +1,1018 @@
+* {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+.mainDiv1, .mainDiv2{
+    width: 50%;
+    height: 640px;
+    float: left;
+    background-image: url(https://image.freepik.com/free-photo/no-translate-detected_35968-5.jpg);
+    background-size: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sImg1, .fImg1, .sImg2, .fImg2 {
+    position: absolute;
+    width: 100%;
+}
+
+.fImg1 {
+    transform: scale(-1, 1)
+}
+
+.fImg2 {
+   transform: scale(-1, -1);
+   bottom: 0;
+}
+
+
+.sImg2 {
+    transform: scale(1, -1);
+    bottom: 0;
+}
+
+.border1, .border2 {
+    border: 3px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    position: absolute;
+    background-image: url(https://image.freepik.com/free-photo/no-translate-detected_35968-5.jpg);
+    background-size: 50% 50%; 
+    width: 380px;
+    height: 500px;
+    right: 3px;
+    top: 65px;
+    z-index: 1;
+}
+
+.border2 {
+    left: 3px;
+}
+
+.mainDiv1::after, .mainDiv2::after {
+    content: "";
+    display: block;
+    width: 388px;
+    height: 510px;
+    position: absolute;
+    top: 61px;
+    right: 0;
+    border: 2px solid; 
+    border-image: url(images/border.jpg) 100 round round;
+}
+
+.mainDiv2::after {
+    left: 0;
+}
+
+.leftFlex {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    grid-template-rows: repeat(10, 35px);
+    padding: 15px;
+    padding-bottom: 0;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: black url(images/80e3e2aa5d68e6565d177f35f64b69b5.png) top left repeat;
+    background-size: auto 50%;
+}
+
+.rightFlex {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    grid-template-rows: repeat(6, 35px);
+    border: 2px inset #bfbfbf;
+    box-sizing: content-box;
+    bottom: 47px;
+    left: 13px;
+}
+
+.item {
+    background: grey;
+    border: 2px inset #737373;
+    box-shadow: -5px 5px 10px 5px inset;
+    background-image: url(images/gettyimages-497825842-612x612.jpg);
+}
+
+.crystalP, .crystalB, .crystalY, .crystalR, .crystalG, .skull, .runa1, .runa2, .runa3, .runa4, .runa5, .select {
+    box-shadow: none;
+    background: #1a001a no-repeat;
+    background-size: 30px 30px;
+}
+
+.crystalP {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/free-game-icons/64/Diamond.png);
+}
+
+.crystalB {
+    background-image: url(http://pngimg.com/uploads/sapphire/sapphire_PNG8.png);
+}
+
+.crystalY {
+    background-image: url(http://pic.90sjimg.com/design/01/32/99/52/58fc9ddf881e8.png);
+}
+
+.crystalR {
+    background-image: url(http://pics.clipartpng.com/Garnet_Gem_PNG_Clipart-793.png);
+}
+
+.crystalG {
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/219263/8abff039-cf12-40c5-9758-f182532b82cd/s1200?webp=false);
+}
+
+.skull {
+    background-image: url(http://ssmm.org.ua/wp-content/uploads/2010/01/darth-vader-256x256.png);
+    background-position:-3px -3px;
+    background-size: 35px 35px;
+}
+
+.runa1 {
+    background-image: url(http://www.diablo1.ru/images/diablo2/rune/Ith.gif);
+}
+
+.runa2 {
+    background-image: url(http://www.diablo1.ru/images/diablo2/rune/Ort.gif);
+}
+
+.runa3 {
+    background-image: url(http://www.diablo1.ru/images/diablo2/rune/Pul.gif);
+}
+
+.runa4 {
+    background-image: url(http://www.diablo1.ru/images/diablo2/rune/Cham.gif);
+}
+
+.runa5 {
+    background-image: url(http://www.diablo1.ru/images/diablo2/rune/El.gif);
+}
+
+.leftFlex img, .rightFlex img{
+    position: absolute;
+    background-size: 100%;
+}
+
+.boxImg {
+    top: 22px;
+    left: 20px;
+    width: 60px;
+    height: 65px;
+    background: url(http://www.diablo1.ru/images/other3/horadric-cub.gif) no-repeat;
+}
+
+.ringImg {
+    top: 85px;
+    left: 17px;
+    width: 31px;
+    height: 31px;
+    background: url(http://www.diablo1.ru/images/diablo2/items/ring4.gif) no-repeat;
+}
+
+.coatImg {
+    top: 135px;
+    left: 17px;
+    width: 70px;
+    height: 100px;
+    background: url(http://www.diablo1.ru/images/diablo2/bd/i08.gif) no-repeat;
+}
+
+.charmImg {
+    top: 260px;
+    left: 15px;
+    width: 33px;
+    height: 105px;
+    background: url(http://www.diablo1.ru/images/diablo2/charms/Large_Charm_2.gif) no-repeat;
+}
+
+.book1Img {
+    top: -5px;
+    right: -5px;
+    width: 40px;
+    height: 75px;
+    background: url() no-repeat;
+}
+
+.book2Img {
+    top: 60px;
+    right: -5px;
+    width: 40px;
+    height: 75px;
+    background: url() no-repeat;
+}
+
+.smthImg {
+    top: 144px;
+    right: 2px;
+    width: 33px;
+    height: 33px;
+    background: url(http://www.diablo1.ru/images/diablo2/charms/Small_Charm_1.gif) no-repeat;
+}
+
+.key2Img {
+    top: 175px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: url(http://www.midlandconsult.ru/netcat_files/83/key.png) no-repeat;
+}
+
+.descr {
+    width: 280px;
+    height: 170px;
+    position: absolute;
+    left: -270px;
+    top: 85px;
+    background: rgb(10,12,10, 0.7);
+    color: rebeccapurple;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 1px white;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 10px;
+    display: none;
+}
+
+.descr2 {
+    width: 250px;
+    height: 170px;
+    position: absolute;
+    right: -269px;
+    top: -83px;
+    background: rgb(10,12,10, 0.7);
+    color: rebeccapurple;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 1px white;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 10px;
+    z-index: 6;
+    display: none;
+}
+
+.descr3 {
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 160px;
+    right: -485px;
+    background: rgb(10,12,10, 0.7);
+    border: none;
+    color: rebeccapurple;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 1px white;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 10px;
+    z-index: 6;
+    display: none;
+}
+
+.border2 .descr3 {
+    right: -255px;
+    border: none;
+    background: rgb(10,12,10, 0.7);
+}
+
+.board1 .descr3 {
+    top: 160px;
+    left: 355px;
+    border: none;
+    width: 280px;
+}
+
+.board3 .descr3 {
+    top: 160px;
+    right: -255px;
+    border: none;
+}
+
+.item:hover~.descr, img:hover~.descr,.item:hover~.descr2, img:hover~.descr2, img:hover~.descr3 {
+    display: block;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px 4px rgb(255,10,10, 0.5);  
+    z-index: 0;
+}
+
+.leftFlex img:hover, .border2 img:hover {
+    box-shadow: 0 0 10px 4px rgb(255,10,10, 0.5); 
+}
+
+.leftFlex img:hover {
+    z-index: 1;
+}
+
+.scaleWrap {
+    width: 380px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: black url(images/80e3e2aa5d68e6565d177f35f64b69b5.png) top left repeat;
+    background-size: 33.5% 98%;
+    z-index: 3;
+}
+
+.scale {
+    width: 366px;
+    margin: 6px 0 0 8px;
+    height: 58px;
+    background: url(images/goldonblack.jpg) repeat;
+    background-size: 40% 150%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.goldInput {
+    height: 12px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    color: white;
+    font-family: fantasy;
+    font-size: 12px;
+    text-align: center;
+    background: black;
+    border: 2px inset lightgrey;
+    position: absolute;
+}
+
+.goldInputF {
+    width: 122px;
+    top: 8px;
+    left: 132px;
+}
+
+.goldInputS {
+    width:144px;
+    top: 35px;
+    left: 110px;
+}
+
+.goldLabel {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 18px;
+    background: black url(https://cdn2.iconfinder.com/data/icons/finance_icons/PNG/png256/coins.png) 50% 50% no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 8px;
+    left: 111px;
+    border: 2px inset lightgrey;
+}
+
+.decorF {
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    border-top: 8px solid;
+    border-image: repeating-linear-gradient(45deg, gold 30px, black 80px) 5% 1;
+}
+
+.decorS {
+    width: 80%;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    border-left: 12px solid;
+    border-right: 12px solid;
+    border-image: repeating-linear-gradient(85deg, gold 8px, black 12px) 1% 1;
+}
+
+.decorT {
+    width: 70%;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+    background: url(images/greyonblack.jpg);
+    background-size: 100% 300%;
+    border-left: 12px solid;
+    border-right: 12px solid;
+    border-image: repeating-linear-gradient(85deg, gold 15px, black 19px) 0% 1;
+}
+
+.decorSDiv1, .decorSDiv2 {
+    position: relative;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border: 2px outset #bfbfbf;
+    top: 5px;
+    left: 293px;
+}
+
+.decorSDiv2 {
+    top: 453px;
+    left: 13px;
+}
+
+.decorSDiv1::after, .decorSDiv2::after {
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #6a6862 url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_not_interested_48px-512.png) no-repeat -2px -2px;
+    background-size: 30px 30px;
+    border: 2px outset #5d5b56;
+}
+
+.border2 .goldInputF {
+    position: absolute;
+    top: 458px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.border2 .goldLabel {
+    top: 458px;
+} 
+
+.board {
+    position: absolute;
+    width: 150px;
+    height: 239px;
+}
+
+.board3 {
+    right: 0;
+}
+
+.board2 {
+    width: 80px;
+    left: 150px;
+}
+
+.board1::before, .board3::before, .board1::after, .board3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #c58f07;
+    border-right: 15px solid transparent;
+}
+
+.board1::after, .board3::after {
+    right: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #c58f07 transparent transparent;
+}
+
+.change1, .change2{
+    display: none;
+}
+
+.board1 .label1::before, .board1 .label2::before, .board3 .label1::before, .board3 .label2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #c58f07;
+    box-shadow: 0 0 1px 1px;
+    border-radius: 50%;
+    top: -4px;
+    z-index: 6;
+} 
+
+.board1 .label1::before {
+    left: -10px;
+}
+
+.board1 .label2::before {
+    top: -2px;
+    right: -58px;
+}
+
+.board3 .label1::before {
+    top: -4px;
+    left: -58px;
+}
+
+.board3 .label2::before {
+    top: -2px;
+    right: -10px;
+}
+
+.label1, .label2 {
+    display: block;
+    width: 34px;
+    height: 20px;
+    border: 2px inset #bfbfbf;
+    box-shadow: -5px 5px 8px 1px inset;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+}
+
+.label2 {
+    left: 52px;
+    top: 4px;
+}
+
+.board3 .label1 {
+    left: 60px;
+}
+
+.board3 .label2 {
+    left: 100px;
+}
+
+.change11:checked~.label1, .change12:checked~.label2 {
+    background: url(images/gettyimages-497825842-612x612.jpg);
+}
+
+.change12:checked~.weapon2{
+    z-index: 4;
+}
+
+.change12:checked~.weapon2Img {
+    display: block;
+    z-index: 5;
+}
+
+.change12:checked~.weapon4Img {
+    display: block;
+    z-index: 5;
+}
+
+.board div {
+    position: absolute;
+    background: black;
+    box-sizing: border-box;
+    border: 3px inset #bfbfbf;
+}
+
+.weapon1, .weapon2 {
+    height: 135px;
+    width: 74px;
+    border: 2px solid;
+}
+
+.weapon1 {
+    top: 31px;
+    left: 12px;
+    z-index: 2;
+}
+
+.weapon2 {
+    left: 16px;
+    top: 29px;
+    z-index: 1;
+}
+
+.board3 .weapon1 {
+    left: 60px;
+}
+
+.board3 .weapon2 {
+    left: 64px;
+}
+
+.gloves {
+    height: 70px;
+    width: 70px;
+    bottom: 0px;
+    left: 13px;
+}
+
+.ring {
+    height: 45px;
+    width: 44px;
+    bottom: 0px;
+    left: 95px;
+}
+
+.medal {
+    height: 45px;
+    width: 44px;
+    top: 35px;
+    left: 8px;
+}
+
+.board3 .gloves{
+   left: 67px; 
+}
+
+.board3 .ring {
+    left: 10px;
+}
+
+.belt1 {
+    height: 80px;
+    width: 80px;
+}
+
+.armor {
+    top: 83px;
+    height: 100px;
+    width: 80px;
+}
+
+.belt2 {
+    bottom: 0;
+    height: 50px;
+    width: 80px;
+}
+
+.border2 img {
+    position: absolute;
+    z-index: 3;
+}
+
+.weapon1Img, .weapon2Img, .weapon3Img, .weapon4Img   {
+    width: 68px;
+    height: 129px;
+}
+
+.weapon1Img {
+    top: 34px;
+    left: 15px;
+}
+
+.weapon2Img {
+    top: 32px;
+    left: 19px;
+    display: none;
+}
+
+.weapon3Img {
+    top: 34px;
+    left: 63px;
+}
+
+img.weapon4Img {
+    top: 32px;
+    left: 67px;
+    display: none;
+}
+
+.ring1Img, .ring2Img {
+    top: 197px;
+    left: 98px;
+    width: 38px;
+}
+
+.ring2Img {
+    left: 243px;
+}
+
+.glovesImg {
+    top: 172px;
+    left: 16px;
+    width: 64px;
+    height: 64px;
+}
+
+.shoesImg {
+    top: 172px;
+    left: 300px;
+    width: 64px;
+    height: 64px;
+}
+
+.belt1Img {
+    top: 5px;
+    left: 155px;
+    width: 70px;
+    height: 70px;
+}
+
+.belt2Img {
+    top: 192px;
+    left: 153px;
+    width: 74px;
+    height: 44px;
+}
+
+.armorImg {
+    top: 86px;
+    left: 154px;
+    height: 94px;
+    width: 72px;
+}
+
+.medalImg {
+    top: 38px;
+    left: 241px;
+    width: 37px;
+}
+
+.board {
+    font-weight: bold;
+    text-shadow: 1px 1px grey, -1px 1px grey;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 81px;
+    background-size: 25%;
+    background-image: url(https://image.freepik.com/free-photo/no-translate-detected_35968-5.jpg);
+    position: relative;
+    clear: both;
+    margin-top: 600px;
+}
+
+.footerWrap {
+    width: 648px;
+    margin: 0 auto;
+    z-index: 0;
+}
+.demon {
+    position: absolute;
+    width: 120px;
+    bottom: 10px;
+    right: 20px;
+    z-index: 2;
+}
+
+.angel {
+    position: absolute;
+    width: 120px;
+    bottom: 15px;
+    left: 0;
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+
+.ball {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+}
+
+.ball::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 7px 5px white;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    opacity: 0.7;
+}
+
+.redball {
+    background: red;
+    left: 110px;
+    box-shadow: 10px -10px 60px 20px inset;
+}
+
+.blueball {
+    background: blue;
+    right: 110px;
+    box-shadow: -10px -10px 60px 20px inset;
+}
+
+.blueball::after {
+    transform: rotate(-30deg);
+    left: 46px;
+}
+
+.footerWrap1, .footerWrap2 {
+    width: 320px;
+    height: 70px;
+    border: 2px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    float: left;
+    position: relative;
+    box-shadow: 0 0 40px 1px inset black;
+}
+
+.footerWrap1::before, .footerWrap2::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: red;
+    border: 2px solid darkred;
+    position: absolute;
+    top: -2px;
+    opacity: 0.8;
+    box-shadow: 0 0 30px 5px inset darkred;
+}
+
+.footerWrap1::before {
+     left: -76px;
+}
+
+.footerWrap2::before  {    
+     right: -76px;
+}
+
+.footerWrap1::after, .footerWrap2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -2px;
+    opacity: 0.4;
+    background-size: 70px;
+}
+
+.footerWrap1::after {
+    left: -76px;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/business-management-1-8/256/b-21-256.png);
+    transform: rotate(135deg);
+}
+
+.footerWrap2::after  {    
+    right: -81px;
+    top: 1px;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/yumminky-tools/100/yummy-tools-01-512.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    transform: rotate(-35deg);   
+}
+
+.wrap1Div, .wrap2Div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    position: absolute;
+    top: 15px;
+    overflow: hidden;
+}
+
+.wrap1Div {
+    left: 35px;
+}
+
+.wrap2Div {
+    right: 35px;
+}
+
+.wrap1Div::after, .wrap2Div::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: #595959;
+    border: 1px inset #8c8c8c;
+    box-shadow: -1px 1px 0 2px #333333, 2px -2px 0 1px #333333, -2px -2px 0 1px #333333;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.wrap1Div::before, .wrap2Div::before {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/line-free/24/Full_screen_symbol-512.png);
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+    top: 12px;
+    left: 4px;
+    background-size: 20px;
+    z-index: 5;
+}
+
+.progress1 {
+    width: 170px;
+    height: 4px;
+    border: 2px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    background: black;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+
+.progress1::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #ffcc00;
+}
+
+.progress2 {
+    width: 150px;
+    height: 24px;
+    border: 2px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    background: black;
+    padding: 1px;
+    padding-left: 20px;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+}
+
+.progress2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffcc00;
+    box-shadow: 0px 0px 15px 5px inset #ffe680;
+}
+
+.progress2::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 20px;
+    border: 2px solid;
+    border-image: url(images/border.jpg) 100 round round;
+    background: url(https://www.clker.com/cliparts/C/s/8/L/3/b/running-icon-hi.png) no-repeat -1px 0;
+    background-size: 20px 20px;
+    position: absolute;
+    left: 0;
+    z-index: 8;
+}
+
+.elixir {
+    width: 30px;
+    height: 35px;
+    border: 5px inset #665200;
+    float: left;
+    margin-top: 15px;
+    outline: 1px solid #997a00;
+    
+}
+
+.elixir::after {
+    content: "";
+    color: #997a00;
+    text-shadow: 0 0 4px black;
+    position: absolute;
+    bottom: 13px;
+}
+
+.elixir1 {
+    margin-left: 20px;
+    background: black url(http://www.diablo1.ru/images/diablo2/potions/greaterhealing.gif) no-repeat -5px 0;
+    background-size: 35px 35px;
+}
+
+.elixir1::after {
+    content: "1";
+}
+
+.elixir2 {
+    background: black url(http://www.diablo1.ru/images/diablo2/potions/greaterhealing.gif) no-repeat -5px 0;
+    background-size: 35px 35px;
+}
+
+.elixir2::after {
+    content: "2";
+}
+
+.elixir3 {
+    background: black url(http://www.diablo1.ru/images/diablo2/potions/lightmana.gif) no-repeat -7px -4px;
+    background-size: 38px 38px;
+}
+
+.elixir3::after {
+    content: "3";
+}
+
+.elixir4 {
+    background: black url(http://www.diablo1.ru/images/diablo2/potions/rejuv.gif) no-repeat -7px -4px;
+    background-size: 38px 38px;
+}
+
+.elixir4::after {
+    content: "4";
+}
